@@ -1,0 +1,36 @@
+body {  
+	font-family: Arial, sans-serif;  
+}  
+
+.menu {  
+	padding: 10px;
+	width: 7%;
+	background-color: gray;   
+}  
+
+.menu-item {  
+	position: relative;  
+	cursor: pointer;  
+}  
+
+.submenu {
+	background-color: gray;   
+	display: none;  
+	position: absolute;  
+	z-index: 1;  
+}  
+
+.menu-item:hover .submenu {  
+	display: block; 
+}  
+
+.submenu a {  
+	padding: 10px;  
+	display: block;  
+	text-decoration: none;  
+}  
+
+.submenu a:hover {  
+	color: white;
+	background-color: lightskyblue; 
+}

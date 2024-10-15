@@ -1,0 +1,68 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {  
+	font-family: Arial, sans-serif;  
+}  
+
+.gradient-list {  
+	list-style: none;  
+	padding: 0;  
+}  
+
+.gradient-list li {  
+	padding: 20px;  
+	margin: 10px 0;  
+	color: white;  
+	position: relative;  
+}  
+
+.gradient-list li:nth-child(1) {  
+	background: linear-gradient(to right, #ff7e5f, #feb47b);  
+}  
+.gradient-list li:nth-child(2) {  
+	background: linear-gradient(to right, #86a8e7, #91eae4);  
+}  
+.gradient-list li:nth-child(3) {  
+	background: linear-gradient(to right, #ff6a6a, #ff6a88);  
+}  
+.gradient-list li:nth-child(4) {  
+	background: linear-gradient(to right, #ffb347, #ffcc33);  
+}  
+.gradient-list li:nth-child(5) {  
+	background: linear-gradient(to right, #ffafbd, #ffc3c3);  
+}  
+.gradient-list li:nth-child(6) {  
+	background: linear-gradient(to right, #00c6ff, #0072ff);  
+}  
+.gradient-list li:nth-child(7) {  
+	background: linear-gradient(to right, #a8e0ff, #f5cbf5);  
+}  
+.gradient-list li:nth-child(8) {  
+	background: linear-gradient(to right, #fbc2eb, #a6c1ee);  
+}  
+.gradient-list li:nth-child(9) {  
+	background: linear-gradient(to right, #ff5858, #f09819);  
+}  
+.gradient-list li:nth-child(10) {  
+	background: linear-gradient(to right, #e0c3fc, #8ec5fc);  
+}  
+
+/* Псевдоэлементы для первого и последнего элемента */  
+.gradient-list li:first-child::before {  
+	content: "Первый элемент: ";  
+	font-weight: bold;  
+}  
+
+.gradient-list li:last-child::after {  
+	content: " Это последний элемент";  
+	font-style: italic;  
+}  
+
+/* Стили для первой буквы каждого элемента */  
+.gradient-list li::first-letter {  
+	font-size: 2em;  
+	color: yellow;  
+	font-weight: bold;  
+}  

@@ -1,0 +1,43 @@
+body {  
+	margin: 0px; 
+	overflow: hidden; /* Отключаем прокрутку */  
+	background-color: #f0f0f0; /* Цвет фона */  
+}  
+
+#shape {  
+	position: absolute;  
+	width: 150px;  
+	height: 150px;  
+	background-color: red;  
+	animation: moveAndTransform 8s linear infinite; 
+}  
+
+@keyframes moveAndTransform {  
+	0%, 100% {  
+			left: 0;  
+			top: 0;  
+			background-color: red; /* Начальный цвет */  
+			background-image: url("https://static.playhop.com/images/6a402_2977039_8bbf6/63d0d5492/2a00000187c17f24_6c9ecf3/539d6c5d3f7642513d49_ca9092/pjpg160x160");  
+			border-radius: 0%; 
+	}  
+	25% {  
+			left: calc(100% - 150px); /* Двигаемся вправо */  
+			top: 0;  
+			background-color: blue; /* Изменяем цвет */  
+			border-radius: 0%;   
+	}  
+	50% {  
+			left: calc(100% - 150px); /* Двигаемся вниз */  
+			top: calc(100% - 150px); 
+			background-color: green; /* Изменяем цвет */
+			background-image: url("https://www.iphones.ru/wp-content/uploads/2017/02/AA-27.png");  
+			border-radius: 50%; 
+	}  
+	75% {  
+			left: 0; /* Двигаемся влево */  
+			top: calc(100% - 150px);  
+			background-color: yellow; /* Изменяем цвет */  
+			background-image: url("https://www.iphones.ru/wp-content/uploads/2017/02/AA-28.png");
+			border-radius: 50%; 
+	}  
+}

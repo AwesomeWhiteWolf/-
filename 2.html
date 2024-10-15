@@ -1,0 +1,70 @@
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Кнопки с переходами</title>  
+    <style>  
+        :root {  
+            --font-size-normal: 16px;  
+            --font-size-hover: 24px;  
+        }  
+
+        body {  
+            display: flex;  
+            justify-content: space-around;  
+            align-items: center;  
+            height: 100vh;  
+            background-color: #f0f0f0;  
+        }  
+        
+        .button {  
+            padding: 10px 20px;  
+            border: none;  
+            border-radius: 5px;  
+            font-size: var(--font-size-normal);  
+            transition: all 0.3s ease;  
+            cursor: pointer;  
+        }  
+
+        .color-change {  
+            background-color: #007BFF;  
+            color: white;  
+        }  
+
+        .color-change:hover {  
+            background-color: #0056b3;  
+            font-size: var(--font-size-hover);  
+        }  
+
+        .size-change {  
+            background-color: #28A745;  
+            color: white;  
+            transition: transform 0.3s ease;  
+        }  
+
+        .size-change:hover {  
+            transform: scale(1.2);  
+            font-size: var(--font-size-hover);  
+        }  
+
+        .position-change {  
+            background-color: #FFC107;  
+            color: white;  
+            position: relative;  
+        }  
+
+        .position-change:hover {  
+            left: 10px; /* Или любое другое значение для перемещения */  
+            font-size: var(--font-size-hover);  
+        }  
+    </style>  
+</head>  
+<body>  
+
+<button class="button color-change">Изменение цвета</button>  
+<button class="button size-change">Изменение размера</button>  
+<button class="button position-change">Изменение положения</button>  
+
+</body>  
+</html>
